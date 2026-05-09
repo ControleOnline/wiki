@@ -41,6 +41,7 @@ jobs:
           FTP_PORT: ${{ secrets.FTP_PORT }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SSL_VERIFY: "false"
         run: bash scripts/sync_from_ftp.sh
 
       - name: Commit synchronized content
