@@ -1,0 +1,42 @@
+name: Deploy wiki to FTP
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - site/**
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-wiki-master
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Ensure site directory exists
+        run: test -d site
+
+      - name: Deploy public site to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: site/
+          server-dir: /
+          exclude: |
+            **/.git*
+            **/.DS_Store
+            **/Thumbs.db
