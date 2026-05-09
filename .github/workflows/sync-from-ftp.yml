@@ -27,6 +27,9 @@ jobs:
           ref: master
           fetch-depth: 0
 
+      - name: Mark initial sync attempt
+        run: echo "Starting sanitized FTP sync"
+
       - name: Install sync dependencies
         run: |
           sudo apt-get update
