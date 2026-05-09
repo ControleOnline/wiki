@@ -6,6 +6,7 @@ set -euo pipefail
 : "${FTP_USER:?FTP_USER is required}"
 : "${FTP_PASSWORD:?FTP_PASSWORD is required}"
 
+ftp_ssl_verify="${FTP_SSL_VERIFY:-false}"
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 work_root="$repo_root/site/.sync-tmp"
 incoming_dir="$work_root/incoming"
@@ -19,6 +20,8 @@ set cmd:fail-exit true
 set net:max-retries 2
 set net:timeout 20
 set xfer:clobber true
+set ftp:ssl-allow true
+set ssl:verify-certificate $ftp_ssl_verify
 mirror --verbose --delete --only-newer / "$incoming_dir"
 bye
 EOF
