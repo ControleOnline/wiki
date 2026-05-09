@@ -1,0 +1,54 @@
+name: Sync public help content from FTP
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/sync-from-ftp.yml
+      - scripts/sync_from_ftp.sh
+      - scripts/filter_public_files.sh
+  workflow_dispatch:
+
+concurrency:
+  group: sync-wiki-master
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Install sync dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp rsync
+
+      - name: Mirror FTP content into site/
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: bash scripts/sync_from_ftp.sh
+
+      - name: Commit synchronized content
+        run: |
+          if git diff --quiet -- site/; then
+            echo "No public content changes detected"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site/
+          git commit -m "Sync public help content from FTP"
+          git push origin master
