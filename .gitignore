@@ -1,0 +1,4 @@
+site/.sync-tmp/
+site/.lftp-state/
+site/.DS_Store
+site/Thumbs.db
