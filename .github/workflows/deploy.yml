@@ -34,6 +34,8 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
+          protocol: ftps
+          security: loose
           local-dir: site/
           server-dir: /
           exclude: |
