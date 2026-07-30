@@ -1,0 +1,16 @@
+= Tarefas documentadas do Project =
+
+Este índice reúne as tarefas documentadas a partir do Project corporativo da ControleOnline, com linguagem voltada ao cliente final e sem exposição de informações operacionais sensíveis.
+
+{| class="wikitable"
+! Tarefa
+! Status da documentação
+! Atualização
+! Origem
+|-
+| [[Project/Agents-mcp 41 - Governança de mudanças internas|Governança de mudanças internas]]
+| Publicada
+| 2026-07-30
+| [https://github.com/ControleOnline/agents-mcp/issues/41 ControleOnline/agents-mcp #41]
+|}
+

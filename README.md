@@ -5,8 +5,10 @@ Este repositório público espelha o conteúdo público de `ajuda.controleonline
 ## Estrutura
 
 - `site/`: conteúdo público que pode ser publicado
+- `mediawiki/`: fontes em wikitext para páginas criadas pela API/runtime do MediaWiki
 - `.github/workflows/sync-from-ftp.yml`: sincroniza o conteúdo do FTP para o repositório
 - `.github/workflows/deploy.yml`: publica `site/` no FTP quando `master` recebe alterações
+- `.github/workflows/publish-mediawiki.yml`: publica páginas wikitext usando o runtime do MediaWiki no servidor
 
 ## Segredos esperados
 
@@ -20,3 +22,4 @@ Este repositório público espelha o conteúdo público de `ajuda.controleonline
 - Não versionar segredos, credenciais, backups, logs ou arquivos de ambiente.
 - A sincronização do FTP remove padrões sensíveis antes de qualquer commit.
 - O deploy publica apenas o diretório `site/`.
+- Páginas do MediaWiki não devem ser publicadas como HTML estático. Use wikitext e publique via API/runtime do MediaWiki.
