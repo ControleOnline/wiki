@@ -124,6 +124,11 @@ upload_file() {
   local file="$2"
   local comment="$3"
 
+  if [[ ! -f "$file" ]]; then
+    echo "skipped missing optional upload $filename"
+    return
+  fi
+
   local response
   response="$(
     curl -fsS \

@@ -14,6 +14,8 @@ patterns=(
   ".hg"
   ".env"
   ".env.*"
+  "*.env"
+  "mediawiki.env"
   "*.key"
   "*.pem"
   "*.p12"
@@ -68,6 +70,7 @@ patterns=(
 )
 
 directories=(
+  ".controleonline"
   "archive"
   "cache"
   "deleted"
