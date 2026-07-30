@@ -28,6 +28,8 @@ patterns=(
   "configuration.php"
   "config.php"
   "config.local.php"
+  "LocalSettings.php"
+  "LocalSettings.*.php"
   "local.xml"
   ".htpasswd"
   ".user.ini"
@@ -49,10 +51,39 @@ patterns=(
   "*.tar.gz"
   "*.tgz"
   "*.rar"
+  "*.7z"
+  "*.jpg"
+  "*.jpeg"
+  "*.png"
+  "*.gif"
+  "*.webp"
+  "*.svg"
+  "*.ico"
+  "*.bmp"
+  "*.tif"
+  "*.tiff"
+  "*.avif"
+  "*.heic"
+  "*.heif"
+)
+
+directories=(
+  "archive"
+  "cache"
+  "deleted"
+  "images"
+  "mwstore"
+  "temp"
+  "thumb"
+  "uploads"
 )
 
 for pattern in "${patterns[@]}"; do
   find "$target_dir" -name "$pattern" -print -exec rm -rf {} +
+done
+
+for directory in "${directories[@]}"; do
+  find "$target_dir" -type d -name "$directory" -print -exec rm -rf {} +
 done
 
 find "$target_dir" -type d -empty -delete

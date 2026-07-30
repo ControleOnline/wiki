@@ -2,3 +2,15 @@ site/.sync-tmp/
 site/.lftp-state/
 site/.DS_Store
 site/Thumbs.db
+site/.env
+site/.env.*
+site/LocalSettings.php
+site/LocalSettings.*.php
+site/cache/
+site/deleted/
+site/images/
+site/mwstore/
+site/temp/
+site/thumb/
+site/uploads/
+mediawiki/images/
