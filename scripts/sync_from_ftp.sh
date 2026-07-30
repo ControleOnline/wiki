@@ -22,7 +22,7 @@ set net:timeout 20
 set xfer:clobber true
 set ftp:ssl-allow true
 set ssl:verify-certificate $ftp_ssl_verify
-mirror --verbose --delete --only-newer --exclude '(^|/)(\.controleonline|\.git|\.svn|\.hg|archive|cache|deleted|images|mwstore|temp|thumb|uploads)(/|$)' --exclude '(^|/)(\.env(\..*)?|mediawiki\.env|LocalSettings(\..*)?\.php)$' --exclude '\.(sql|sqlite3?|db|jpg|jpeg|png|gif|webp|svg|ico|bmp|tiff?|avif|heic|heif)(\.gz)?$' / "$incoming_dir"
+mirror --verbose --delete --only-newer --parallel=4 --exclude '(^|/)(\.controleonline|\.git|\.svn|\.hg|archive|backup|backups|cache|deleted|images|logs|mwstore|temp|thumb|tmp|uploads)(/|$)' --exclude '(^|/)(\.env(\..*)?|mediawiki\.env|LocalSettings(\..*)?\.php|access_log|error_log|php_errorlog)$' --exclude '\.(sql|sqlite3?|db|bak|backup|old|orig|log|key|pem|p12|pfx|crt|csr|der|zip|tar|tgz|rar|7z|jpg|jpeg|png|gif|webp|svg|ico|bmp|tiff?|avif|heic|heif)(\.gz)?$' / "$incoming_dir"
 bye
 EOF
 
