@@ -8,6 +8,7 @@ Este repositório público espelha o conteúdo público de `ajuda.controleonline
 - `mediawiki/`: fontes em wikitext para páginas criadas pela API/runtime do MediaWiki
 - `.github/workflows/sync-from-ftp.yml`: sincroniza o conteúdo do FTP para o repositório
 - `.github/workflows/deploy.yml`: publica `site/` no FTP quando `master` recebe alterações
+- `.github/workflows/publish-mediawiki-api.yml`: publica fontes wikitext pela API do MediaWiki
 
 ## Segredos esperados
 
@@ -15,6 +16,8 @@ Este repositório público espelha o conteúdo público de `ajuda.controleonline
 - `FTP_PORT`
 - `FTP_USER`
 - `FTP_PASSWORD`
+- `MEDIAWIKI_USERNAME`
+- `MEDIAWIKI_PASSWORD`
 
 ## Regras de segurança
 

@@ -1,0 +1,23 @@
+name: Publish MediaWiki pages by API
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Publish pages through MediaWiki API
+        env:
+          MEDIAWIKI_API_URL: https://ajuda.controleonline.com/api.php
+          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
+          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+        run: bash scripts/publish_mediawiki_api.sh
