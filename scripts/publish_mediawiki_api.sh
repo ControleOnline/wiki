@@ -2,12 +2,43 @@
 set -euo pipefail
 
 : "${MEDIAWIKI_API_URL:=https://ajuda.controleonline.com/api.php}"
-: "${MEDIAWIKI_USERNAME:?MEDIAWIKI_USERNAME is required}"
-: "${MEDIAWIKI_PASSWORD:?MEDIAWIKI_PASSWORD is required}"
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cookie_file="$(mktemp)"
-trap 'unlink "$cookie_file" 2>/dev/null || true' EXIT
+credential_file=""
+trap 'unlink "$cookie_file" 2>/dev/null || true; if [[ -n "$credential_file" ]]; then unlink "$credential_file" 2>/dev/null || true; fi' EXIT
+
+load_credentials_from_ftp() {
+  : "${FTP_HOST:?FTP_HOST is required when MediaWiki credentials are not in the environment}"
+  : "${FTP_PORT:?FTP_PORT is required when MediaWiki credentials are not in the environment}"
+  : "${FTP_USER:?FTP_USER is required when MediaWiki credentials are not in the environment}"
+  : "${FTP_PASSWORD:?FTP_PASSWORD is required when MediaWiki credentials are not in the environment}"
+
+  local credential_path="${MEDIAWIKI_CREDENTIALS_FTP_PATH:-../.controleonline/mediawiki.env}"
+  credential_file="$(mktemp)"
+
+  lftp -u "$FTP_USER","$FTP_PASSWORD" -p "$FTP_PORT" "$FTP_HOST" <<EOF
+set cmd:fail-exit true
+set net:max-retries 2
+set net:timeout 20
+set ftp:ssl-allow true
+set ssl:verify-certificate false
+get "$credential_path" -o "$credential_file"
+bye
+EOF
+
+  set -a
+  # shellcheck disable=SC1090
+  source "$credential_file"
+  set +a
+}
+
+if [[ -z "${MEDIAWIKI_USERNAME:-}" || -z "${MEDIAWIKI_PASSWORD:-}" ]]; then
+  load_credentials_from_ftp
+fi
+
+: "${MEDIAWIKI_USERNAME:?MEDIAWIKI_USERNAME is required}"
+: "${MEDIAWIKI_PASSWORD:?MEDIAWIKI_PASSWORD is required}"
 
 api_post() {
   curl -fsS \

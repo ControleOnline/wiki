@@ -17,7 +17,10 @@ jobs:
 
       - name: Publish pages through MediaWiki API
         env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           MEDIAWIKI_API_URL: https://ajuda.controleonline.com/api.php
-          MEDIAWIKI_USERNAME: ${{ secrets.MEDIAWIKI_USERNAME }}
-          MEDIAWIKI_PASSWORD: ${{ secrets.MEDIAWIKI_PASSWORD }}
+          MEDIAWIKI_CREDENTIALS_FTP_PATH: ../.controleonline/mediawiki.env
         run: bash scripts/publish_mediawiki_api.sh
