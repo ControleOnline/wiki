@@ -136,6 +136,11 @@ remove_page() {
     return
   fi
 
+  if [[ "$(jq -r '.error.code // empty' <<<"$response")" == "missingtitle" ]]; then
+    echo "already absent $title"
+    return
+  fi
+
   publish_page \
     "$title" \
     "$repo_root/mediawiki/removed-page.wiki" \
