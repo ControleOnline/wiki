@@ -12,4 +12,9 @@ Este índice reúne atualizações do aplicativo documentadas em linguagem volta
 | CRM
 | Publicada
 | 2026-07-30
+|-
+| [[Project/Produtos - Busca em grupos de produtos|Produtos - Busca em grupos de produtos]]
+| Produtos
+| Publicada
+| 2026-07-30
 |}

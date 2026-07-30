@@ -1,0 +1,28 @@
+= Produtos - Busca em grupos de produtos =
+
+{{DISPLAYTITLE:Produtos - Busca em grupos de produtos}}
+
+== Resumo ==
+
+A inclusão de produtos em grupos foi ajustada para evitar que itens já associados ao grupo continuem aparecendo como opção na próxima busca.
+
+== O que muda para o usuário ==
+
+Ao salvar um produto dentro de um grupo e abrir a busca novamente para adicionar outro item, a lista passa a ser atualizada antes de exibir as opções. Assim, produtos que já fazem parte daquele grupo deixam de aparecer como disponíveis para nova inclusão.
+
+== Benefícios ==
+
+* Reduz risco de selecionar novamente um produto já vinculado.
+* Deixa o cadastro de grupos de produtos mais claro.
+* Facilita a montagem de grupos com vários itens em sequência.
+
+== Onde se aplica ==
+
+Esta melhoria se aplica ao cadastro e edição de grupos de produtos, especialmente no momento de buscar e adicionar produtos ao grupo.
+
+== Orientação de uso ==
+
+Depois de salvar um produto no grupo, abra a busca para adicionar o próximo item. A lista exibida deve considerar os produtos já vinculados e mostrar apenas opções ainda disponíveis para inclusão.
+
+[[Categoria:Produtos]]
+[[Categoria:Cadastros]]

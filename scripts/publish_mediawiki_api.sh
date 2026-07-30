@@ -157,4 +157,9 @@ publish_page \
   "$repo_root/mediawiki/project/crm-edicao-endereco-cliente.wiki" \
   "Documenta melhoria de CRM para cliente final"
 
+publish_page \
+  "Project/Produtos - Busca em grupos de produtos" \
+  "$repo_root/mediawiki/project/produtos-busca-grupos-produtos.wiki" \
+  "Documenta melhoria de produtos para cliente final"
+
 remove_page "Project/Agents-mcp 41 - Governança de mudanças internas"
