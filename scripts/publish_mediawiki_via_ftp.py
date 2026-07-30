@@ -2,6 +2,7 @@
 import json
 import os
 import secrets
+import posixpath
 import subprocess
 import sys
 import tempfile
@@ -36,12 +37,8 @@ def require_env(name: str) -> str:
     return value
 
 
-def run_lftp(commands: str) -> None:
-    host = require_env("FTP_HOST")
-    port = require_env("FTP_PORT")
-    user = require_env("FTP_USER")
-    password = require_env("FTP_PASSWORD")
-    script = (
+def build_lftp_script(commands: str) -> str:
+    return (
         "set cmd:fail-exit true\n"
         "set net:max-retries 2\n"
         "set net:timeout 20\n"
@@ -50,12 +47,46 @@ def run_lftp(commands: str) -> None:
         f"{commands}\n"
         "bye\n"
     )
+
+
+def run_lftp(commands: str) -> None:
+    host = require_env("FTP_HOST")
+    port = require_env("FTP_PORT")
+    user = require_env("FTP_USER")
+    password = require_env("FTP_PASSWORD")
     subprocess.run(
         ["lftp", "-u", f"{user},{password}", "-p", port, host],
-        input=script,
+        input=build_lftp_script(commands),
         text=True,
         check=True,
     )
+
+
+def run_lftp_capture(commands: str) -> str:
+    host = require_env("FTP_HOST")
+    port = require_env("FTP_PORT")
+    user = require_env("FTP_USER")
+    password = require_env("FTP_PASSWORD")
+    result = subprocess.run(
+        ["lftp", "-u", f"{user},{password}", "-p", port, host],
+        input=build_lftp_script(commands),
+        text=True,
+        check=True,
+        capture_output=True,
+    )
+    return result.stdout
+
+
+def detect_mediawiki_dir() -> str:
+    output = run_lftp_capture("find / -name api.php")
+    candidates = [
+        line.strip()
+        for line in output.splitlines()
+        if line.strip().endswith("/api.php")
+    ]
+    if not candidates:
+        raise SystemExit("MediaWiki api.php was not found in FTP")
+    return posixpath.dirname(candidates[0])
 
 
 def build_payload() -> list[dict[str, str]]:
@@ -132,12 +163,14 @@ def main() -> None:
     pages = build_payload()
     secret = secrets.token_urlsafe(32)
     remote_name = f"codex-publish-{secrets.token_hex(8)}.php"
+    mediawiki_dir = detect_mediawiki_dir()
+    remote_path = posixpath.join(mediawiki_dir, remote_name)
 
     with tempfile.TemporaryDirectory() as temporary_dir:
         local_script = Path(temporary_dir) / remote_name
         local_script.write_text(build_php(secret, pages), encoding="utf-8")
         try:
-            run_lftp(f"put {local_script} -o /{remote_name}")
+            run_lftp(f"put {local_script} -o {remote_path}")
             with urllib.request.urlopen(
                 f"{API_URL}/{remote_name}?key={secret}",
                 timeout=60,
@@ -149,7 +182,7 @@ def main() -> None:
             for saved in result.get("saved", []):
                 print(f"saved {saved['title']} rev {saved['revision']}")
         finally:
-            run_lftp(f"rm -f /{remote_name}")
+            run_lftp(f"rm -f {remote_path}")
 
 
 if __name__ == "__main__":
