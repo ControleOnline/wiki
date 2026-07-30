@@ -15,6 +15,11 @@ jobs:
         with:
           ref: master
 
+      - name: Install FTP client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
       - name: Publish pages through MediaWiki API
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
