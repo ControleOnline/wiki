@@ -1,20 +1,59 @@
-= Atualizações documentadas do produto =
+= Central de Ajuda Controle Online =
 
-Este índice reúne atualizações do aplicativo documentadas em linguagem voltada ao cliente final, sem exposição de detalhes internos, links de desenvolvimento ou informações operacionais sensíveis.
+Esta página organiza a ajuda por aplicativo. Comece escolhendo a visão em que você trabalha e depois siga pela seção do menu até encontrar o passo a passo da ação que deseja executar.
+
+== Aplicativos ==
 
 {| class="wikitable"
-! Atualização
-! Área
-! Status da documentação
-! Atualização
+! Aplicativo
+! Para quem é
+! Conteúdos disponíveis
 |-
-| [[Project/CRM - Edição de endereço de cliente|CRM - Edição de endereço de cliente]]
-| CRM
-| Publicada
+| [[Project/Manager|Manager]]
+| Donos, gerentes e backoffice
+| Administração operacional, financeiro, produtos, pedidos e configurações
+|-
+| [[Project/Admin|Admin]]
+| Administradores responsáveis por menus e acessos
+| Menus, permissões e cadastros administrativos
+|-
+| [[Project/CRM|CRM]]
+| Vendedores, consultores e equipe comercial
+| Clientes, oportunidades, propostas, contratos, conversas e comissões
+|-
+| [[Project/POS|POS]]
+| Caixa, balcão, garçom e atendimento presencial
+| Vendas, comandas, carrinho, cobrança e caixa
+|-
+| [[Project/PPC|PPC]]
+| Produção, cozinha, expedição e displays
+| Filas, preparo, conferência e acompanhamento operacional
+|-
+| [[Project/Shop|Shop]]
+| Cliente final
+| Vitrine, catálogo, carrinho, checkout e pedidos online
+|-
+| [[Project/Delivery|Delivery]]
+| Entregadores e operação logística
+| Corridas, entregas, recebíveis e presença
+|-
+| [[Project/Service|Service]]
+| Equipe operacional de apoio
+| Etiquetas, insumos e rotinas de suporte operacional
+|}
+
+== Artigos recentes ==
+
+{| class="wikitable"
+! Artigo
+! Caminho
+! Atualizado em
+|-
+| [[Project/CRM - Edição de endereço de cliente|Como editar o endereço de um cliente]]
+| [[Project/CRM|CRM]] > [[Project/CRM/Clientes|Clientes]]
 | 2026-07-30
 |-
-| [[Project/Produtos - Busca em grupos de produtos|Produtos - Busca em grupos de produtos]]
-| Produtos
-| Publicada
+| [[Project/Produtos - Busca em grupos de produtos|Adicionar produtos a grupos sem repetir itens]]
+| [[Project/Manager|Manager]] > Produtos
 | 2026-07-30
 |}

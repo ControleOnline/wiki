@@ -1,0 +1,32 @@
+= CRM =
+
+{{DISPLAYTITLE:CRM}}
+
+O CRM reúne os fluxos comerciais usados pela equipe de vendas, pré-venda e pós-venda para acompanhar clientes, oportunidades, propostas, contratos, conversas e comissões.
+
+== Seções do menu ==
+
+{| class="wikitable"
+! Seção
+! O que você faz aqui
+|-
+| [[Project/CRM/Clientes|Clientes]]
+| Consultar, cadastrar e atualizar dados de clientes, contatos, documentos e endereços.
+|-
+| Oportunidades
+| Acompanhar negociações, filtros de status e próximos retornos comerciais.
+|-
+| Propostas
+| Criar, revisar e acompanhar propostas comerciais.
+|-
+| Contratos
+| Consultar contratos vinculados ao relacionamento comercial.
+|-
+| Conversas
+| Acompanhar interações e mensagens do relacionamento comercial.
+|-
+| Comissões
+| Consultar comissões vinculadas às vendas.
+|}
+
+[[Categoria:CRM]]

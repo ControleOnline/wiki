@@ -119,6 +119,37 @@ publish_page() {
   jq -r '"published \(.edit.title) rev \(.edit.newrevid)"' <<<"$response"
 }
 
+upload_file() {
+  local filename="$1"
+  local file="$2"
+  local comment="$3"
+
+  local response
+  response="$(
+    curl -fsS \
+      --cookie "$cookie_file" \
+      --cookie-jar "$cookie_file" \
+      -X POST \
+      "$MEDIAWIKI_API_URL" \
+      -F action=upload \
+      -F format=json \
+      -F filename="$filename" \
+      -F file=@"$file" \
+      -F comment="$comment" \
+      -F ignorewarnings=1 \
+      -F token="$csrf_token"
+  )"
+
+  local result
+  result="$(jq -r '.upload.result // .error.code // "unknown"' <<<"$response")"
+  if [[ "$result" != "Success" && "$result" != "Warning" ]]; then
+    echo "Failed to upload $filename: $result" >&2
+    exit 1
+  fi
+
+  jq -r '"uploaded \(.upload.filename // "'"$filename"'")"' <<<"$response"
+}
+
 remove_page() {
   local title="$1"
   local response
@@ -150,12 +181,37 @@ remove_page() {
 publish_page \
   "Project" \
   "$repo_root/mediawiki/Project.wiki" \
-  "Atualiza indice publico de tarefas documentadas"
+  "Organiza Central de Ajuda por aplicativos"
+
+publish_page \
+  "Project/CRM" \
+  "$repo_root/mediawiki/project/crm.wiki" \
+  "Publica indice de ajuda do CRM"
+
+publish_page \
+  "Project/CRM/Clientes" \
+  "$repo_root/mediawiki/project/crm-clientes.wiki" \
+  "Publica indice de ajuda de clientes do CRM"
+
+upload_file \
+  "Crm-editar-endereco-cliente-lista.png" \
+  "$repo_root/mediawiki/images/crm-editar-endereco-cliente-lista.png" \
+  "Adiciona print sanitizado da lista de endereços do cliente"
+
+upload_file \
+  "Crm-editar-endereco-cliente-formulario.png" \
+  "$repo_root/mediawiki/images/crm-editar-endereco-cliente-formulario.png" \
+  "Adiciona print sanitizado do formulario de endereço do cliente"
+
+upload_file \
+  "Crm-editar-endereco-cliente-resultado.png" \
+  "$repo_root/mediawiki/images/crm-editar-endereco-cliente-resultado.png" \
+  "Adiciona print sanitizado do resultado da edição de endereço"
 
 publish_page \
   "Project/CRM - Edição de endereço de cliente" \
   "$repo_root/mediawiki/project/crm-edicao-endereco-cliente.wiki" \
-  "Documenta melhoria de CRM para cliente final"
+  "Refaz pagina CRM como passo a passo de ajuda"
 
 publish_page \
   "Project/Produtos - Busca em grupos de produtos" \

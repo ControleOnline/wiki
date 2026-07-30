@@ -1,29 +1,66 @@
-= CRM - Edição de endereço de cliente =
+= Como editar o endereço de um cliente =
 
-{{DISPLAYTITLE:CRM - Edição de endereço de cliente}}
+{{DISPLAYTITLE:Como editar o endereço de um cliente}}
 
-== Resumo ==
+Aprenda a corrigir um endereço já cadastrado em um cliente do CRM.
 
-A rotina de edição de endereço no cadastro de clientes do CRM foi revisada para tornar a atualização de dados mais clara e previsível.
+== Onde fica ==
 
-== O que muda para o usuário ==
+CRM > Clientes > Cadastro do cliente > Geral > Endereços
 
-Ao alterar um endereço já cadastrado, o sistema deve validar corretamente os campos editados e manter os dados existentes que continuam válidos. Isso evita mensagens indevidas de campo obrigatório quando o usuário altera apenas uma parte do endereço, como a rua.
+== Quando usar ==
 
-== Benefícios ==
+Use este passo a passo quando um cliente já tiver endereço cadastrado e você precisar corrigir alguma informação, como rua, número, bairro, cidade, estado, CEP, complemento ou apelido do endereço.
 
-* Menos retrabalho durante a atualização cadastral.
-* Mais confiança ao corrigir endereços de clientes.
-* Fluxo de CRM mais estável para equipes comerciais e administrativas.
+== Antes de começar ==
 
-== Onde se aplica ==
+* Acesse o aplicativo CRM com um usuário autorizado a editar clientes.
+* Abra o cadastro do cliente que terá o endereço ajustado.
+* Confira os dados corretos antes de salvar.
 
-Esta documentação se aplica ao cadastro de clientes no CRM, especialmente em telas de visualização e edição de endereço.
+== Passo a passo ==
 
-== Orientação de uso ==
+# No CRM, acesse '''Clientes'''.
+# Abra o cadastro do cliente desejado.
+# Na aba '''Geral''', localize a seção '''Endereços'''.
+# Encontre o endereço que precisa ser corrigido.
+# Clique no botão de edição, identificado pelo ícone de lápis.
 
-Revise os dados do endereço antes de salvar e confirme se rua, cidade e demais campos obrigatórios permanecem preenchidos. Caso o sistema ainda apresente validação incompatível com os dados exibidos, registre a ocorrência para análise do suporte.
+[[Arquivo:Crm-editar-endereco-cliente-lista.png|miniatura|centro|Na seção Endereços, use o ícone de lápis para editar um endereço já cadastrado.]]
+
+# No formulário, altere somente os campos necessários.
+# Mantenha preenchidos os dados obrigatórios: CEP, rua, número, bairro, cidade, estado e país.
+# Se quiser facilitar a identificação do endereço, preencha também o apelido.
+# Clique em '''Salvar'''.
+
+[[Arquivo:Crm-editar-endereco-cliente-formulario.png|miniatura|centro|No formulário de edição, revise os campos do endereço antes de salvar.]]
+
+== Resultado esperado ==
+
+Depois de salvar, o sistema fecha o formulário, exibe a mensagem de sucesso e mostra o endereço atualizado na lista do cliente.
+
+[[Arquivo:Crm-editar-endereco-cliente-resultado.png|miniatura|centro|Após salvar, confira se o endereço atualizado aparece na seção Endereços.]]
+
+== Problemas comuns ==
+
+{| class="wikitable"
+! Situação
+! Como resolver
+|-
+| O sistema informa que falta preencher um campo obrigatório.
+| Volte ao formulário e confira CEP, rua, número, bairro, cidade, estado e país.
+|-
+| A alteração não aparece na lista.
+| Atualize a tela do cliente e confirme se o endereço foi salvo. Se o endereço antigo continuar aparecendo, acione o suporte.
+|-
+| Você abriu o cliente errado.
+| Cancele a edição sem salvar e volte para a lista de clientes antes de alterar qualquer dado.
+|}
+
+== Artigos relacionados ==
+
+* [[Project/CRM/Clientes|CRM - Clientes]]
+* [[Project/CRM|CRM]]
 
 [[Categoria:CRM]]
 [[Categoria:Clientes]]
-
