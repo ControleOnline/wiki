@@ -1,16 +1,15 @@
-= Tarefas documentadas do Project =
+= Atualizações documentadas do produto =
 
-Este índice reúne as tarefas documentadas a partir do Project corporativo da ControleOnline, com linguagem voltada ao cliente final e sem exposição de informações operacionais sensíveis.
+Este índice reúne atualizações do aplicativo documentadas em linguagem voltada ao cliente final, sem exposição de detalhes internos, links de desenvolvimento ou informações operacionais sensíveis.
 
 {| class="wikitable"
-! Tarefa
+! Atualização
+! Área
 ! Status da documentação
 ! Atualização
-! Origem
 |-
-| [[Project/Agents-mcp 41 - Governança de mudanças internas|Governança de mudanças internas]]
+| [[Project/CRM - Edição de endereço de cliente|CRM - Edição de endereço de cliente]]
+| CRM
 | Publicada
 | 2026-07-30
-| [https://github.com/ControleOnline/agents-mcp/issues/41 ControleOnline/agents-mcp #41]
 |}
-

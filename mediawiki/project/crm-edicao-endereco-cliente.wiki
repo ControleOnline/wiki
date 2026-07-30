@@ -1,0 +1,29 @@
+= CRM - Edição de endereço de cliente =
+
+{{DISPLAYTITLE:CRM - Edição de endereço de cliente}}
+
+== Resumo ==
+
+A rotina de edição de endereço no cadastro de clientes do CRM foi revisada para tornar a atualização de dados mais clara e previsível.
+
+== O que muda para o usuário ==
+
+Ao alterar um endereço já cadastrado, o sistema deve validar corretamente os campos editados e manter os dados existentes que continuam válidos. Isso evita mensagens indevidas de campo obrigatório quando o usuário altera apenas uma parte do endereço, como a rua.
+
+== Benefícios ==
+
+* Menos retrabalho durante a atualização cadastral.
+* Mais confiança ao corrigir endereços de clientes.
+* Fluxo de CRM mais estável para equipes comerciais e administrativas.
+
+== Onde se aplica ==
+
+Esta documentação se aplica ao cadastro de clientes no CRM, especialmente em telas de visualização e edição de endereço.
+
+== Orientação de uso ==
+
+Revise os dados do endereço antes de salvar e confirme se rua, cidade e demais campos obrigatórios permanecem preenchidos. Caso o sistema ainda apresente validação incompatível com os dados exibidos, registre a ocorrência para análise do suporte.
+
+[[Categoria:CRM]]
+[[Categoria:Clientes]]
+

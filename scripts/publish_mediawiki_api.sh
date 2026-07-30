@@ -124,6 +124,6 @@ publish_page \
   "Atualiza indice publico de tarefas documentadas"
 
 publish_page \
-  "Project/Agents-mcp 41 - Governança de mudanças internas" \
-  "$repo_root/mediawiki/project/agents-mcp-41-governanca-de-mudancas-internas.wiki" \
-  "Documenta tarefa agents-mcp 41 para cliente final"
+  "Project/CRM - Edição de endereço de cliente" \
+  "$repo_root/mediawiki/project/crm-edicao-endereco-cliente.wiki" \
+  "Documenta melhoria de CRM para cliente final"
