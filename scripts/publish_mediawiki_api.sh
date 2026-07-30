@@ -118,6 +118,29 @@ publish_page() {
   jq -r '"published \(.edit.title) rev \(.edit.newrevid)"' <<<"$response"
 }
 
+remove_page() {
+  local title="$1"
+  local response
+  response="$(
+    api_post \
+      --data-urlencode action=delete \
+      --data-urlencode format=json \
+      --data-urlencode title="$title" \
+      --data-urlencode reason="Remove conteúdo fora do escopo da documentação de cliente" \
+      --data-urlencode token="$csrf_token" || true
+  )"
+
+  if [[ "$(jq -r '.delete.title // empty' <<<"$response")" == "$title" ]]; then
+    echo "removed $title"
+    return
+  fi
+
+  publish_page \
+    "$title" \
+    "$repo_root/mediawiki/removed-page.wiki" \
+    "Remove conteúdo fora do escopo da documentação de cliente"
+}
+
 publish_page \
   "Project" \
   "$repo_root/mediawiki/Project.wiki" \
@@ -127,3 +150,5 @@ publish_page \
   "Project/CRM - Edição de endereço de cliente" \
   "$repo_root/mediawiki/project/crm-edicao-endereco-cliente.wiki" \
   "Documenta melhoria de CRM para cliente final"
+
+remove_page "Project/Agents-mcp 41 - Governança de mudanças internas"
