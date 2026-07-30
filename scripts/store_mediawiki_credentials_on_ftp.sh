@@ -37,7 +37,9 @@ set net:max-retries 2
 set net:timeout 20
 set ftp:ssl-allow true
 set ssl:verify-certificate false
+set cmd:fail-exit false
 mkdir -p "$credential_dir"
+set cmd:fail-exit true
 put "$credential_file" -o "$credential_path"
 bye
 EOF
