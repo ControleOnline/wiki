@@ -21,6 +21,7 @@ load_credentials_from_ftp() {
 set cmd:fail-exit true
 set net:max-retries 2
 set net:timeout 20
+set xfer:clobber true
 set ftp:ssl-allow true
 set ssl:verify-certificate false
 get "$credential_path" -o "$credential_file"
