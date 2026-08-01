@@ -1,0 +1,192 @@
+<div class="co-app" {{{html-user-language-attributes}}}>
+	<input class="co-menu-toggle" type="checkbox" id="co-menu-toggle" aria-hidden="true">
+	<div class="co-shell">
+		<header class="co-header">
+			<a class="co-brand" href="{{link-mainpage}}" aria-label="{{msg-sitetitle}}">
+				<img
+					class="co-brand-logo"
+					src="{{stylepath}}/ControleOnline/resources/assets/logo-controle-branco-1.png"
+					alt="{{msg-sitetitle}}">
+				<span class="co-brand-copy">
+					<span class="co-brand-kicker">Controle Online</span>
+					<span class="co-brand-name">{{msg-sitetitle}}</span>
+				</span>
+			</a>
+
+			{{#data-search-box}}
+			<form class="co-search" action="{{form-action}}" role="search">
+				<input type="hidden" name="title" value="{{page-title}}">
+				{{{html-input}}}
+				{{{html-button-search}}}
+			</form>
+			{{/data-search-box}}
+
+			<div class="co-header-actions">
+				{{#data-portlets}}
+				{{#data-personal}}
+				<nav class="co-portlet co-portlet--personal" aria-label="{{label}}">
+					<ul class="co-portlet__list">{{{html-items}}}</ul>
+				</nav>
+				{{/data-personal}}
+				{{/data-portlets}}
+				<label class="co-menu-button" for="co-menu-toggle" aria-label="{{msg-navigation-heading}}">Menu</label>
+			</div>
+		</header>
+
+		<div class="co-toolbar">
+			{{#data-portlets}}
+				{{#data-views}}
+				<nav class="co-portlet co-portlet--views" aria-label="{{label}}">
+					<ul class="co-portlet__list">{{{html-items}}}</ul>
+				</nav>
+				{{/data-views}}
+				{{#data-cactions}}
+				<nav class="co-portlet co-portlet--actions" aria-label="{{label}}">
+					<ul class="co-portlet__list">{{{html-items}}}</ul>
+				</nav>
+				{{/data-cactions}}
+				{{#data-namespaces}}
+				<nav class="co-portlet co-portlet--namespaces" aria-label="{{label}}">
+					<ul class="co-portlet__list">{{{html-items}}}</ul>
+				</nav>
+				{{/data-namespaces}}
+				{{#data-variants}}
+				<nav class="co-portlet co-portlet--variants" aria-label="{{label}}">
+					<ul class="co-portlet__list">{{{html-items}}}</ul>
+				</nav>
+				{{/data-variants}}
+				{{#data-languages}}
+				<nav class="co-portlet co-portlet--languages" aria-label="{{label}}">
+					<ul class="co-portlet__list">{{{html-items}}}</ul>
+				</nav>
+				{{/data-languages}}
+			{{/data-portlets}}
+		</div>
+
+		<aside class="co-drawer">
+			<div class="co-drawer-section">
+				<div class="co-drawer-title">Aplicativos</div>
+				<div class="co-app-grid co-app-grid--drawer">
+					<a class="co-app-card co-app-card--pdv" href="{{scriptpath}}/index.php?title=Project/POS">
+						<img src="{{stylepath}}/ControleOnline/resources/assets/PDV.png" alt="On PDV">
+						<span>On PDV</span>
+					</a>
+					<a class="co-app-card co-app-card--pcp" href="{{scriptpath}}/index.php?title=Project/PPC">
+						<img src="{{stylepath}}/ControleOnline/resources/assets/PCP.png" alt="On PCP">
+						<span>On PCP</span>
+					</a>
+					<a class="co-app-card co-app-card--gestor" href="{{scriptpath}}/index.php?title=Project/Manager">
+						<img src="{{stylepath}}/ControleOnline/resources/assets/Gestor.png" alt="On Gestor">
+						<span>On Gestor</span>
+					</a>
+					<a class="co-app-card co-app-card--delivery" href="{{scriptpath}}/index.php?title=Project/Delivery">
+						<img src="{{stylepath}}/ControleOnline/resources/assets/Delivery.png" alt="On Delivery">
+						<span>On Delivery</span>
+					</a>
+					<a class="co-app-card co-app-card--act" href="{{scriptpath}}/index.php?title=Project/ACT">
+						<img src="{{stylepath}}/ControleOnline/resources/assets/ACT.png" alt="On ACT">
+						<span>On ACT</span>
+					</a>
+					<a class="co-app-card co-app-card--crm" href="{{scriptpath}}/index.php?title=Project/CRM">
+						<img src="{{stylepath}}/ControleOnline/resources/assets/CRM.png" alt="On CRM">
+						<span>On CRM</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="co-drawer-section">
+				<div class="co-drawer-title">Módulos</div>
+				<div class="co-drawer-links">
+					<a href="{{scriptpath}}/index.php?title=Project/Admin">Admin</a>
+					<a href="{{scriptpath}}/index.php?title=Project/Shop">Shop</a>
+					<a href="{{scriptpath}}/index.php?title=Project/Service">Service</a>
+					<a href="{{scriptpath}}/index.php?title=Project/Produtos_-_Busca_em_grupos_de_produtos">Produtos</a>
+				</div>
+			</div>
+		</aside>
+
+		{{#is-mainpage}}
+		<section class="co-hero co-hero--home">
+			<div class="co-hero-copy">
+				<div class="co-kicker">Controle Online</div>
+				<h1>Central de Ajuda</h1>
+				<p>Portal corporativo de suporte e operação. Encontre procedimentos, atalhos e guias por aplicativo com uma navegação rápida, clara e pensada para celular.</p>
+				<div class="co-hero-actions">
+					<a class="co-btn co-btn--primary" href="{{searchaction}}">Pesquisar na ajuda</a>
+					<a class="co-btn co-btn--secondary" href="{{scriptpath}}/index.php?title=Project">Abrir a central</a>
+					<a class="co-btn co-btn--tertiary" href="http://controleonline.com/">Site institucional</a>
+				</div>
+			</div>
+			<div class="co-hero-grid">
+				<a class="co-app-card co-app-card--pdv" href="{{scriptpath}}/index.php?title=Project/POS">
+					<img src="{{stylepath}}/ControleOnline/resources/assets/PDV.png" alt="On PDV">
+					<span>On PDV</span>
+				</a>
+				<a class="co-app-card co-app-card--pcp" href="{{scriptpath}}/index.php?title=Project/PPC">
+					<img src="{{stylepath}}/ControleOnline/resources/assets/PCP.png" alt="On PCP">
+					<span>On PCP</span>
+				</a>
+				<a class="co-app-card co-app-card--gestor" href="{{scriptpath}}/index.php?title=Project/Manager">
+					<img src="{{stylepath}}/ControleOnline/resources/assets/Gestor.png" alt="On Gestor">
+					<span>On Gestor</span>
+				</a>
+				<a class="co-app-card co-app-card--delivery" href="{{scriptpath}}/index.php?title=Project/Delivery">
+					<img src="{{stylepath}}/ControleOnline/resources/assets/Delivery.png" alt="On Delivery">
+					<span>On Delivery</span>
+				</a>
+				<a class="co-app-card co-app-card--act" href="{{scriptpath}}/index.php?title=Project/ACT">
+					<img src="{{stylepath}}/ControleOnline/resources/assets/ACT.png" alt="On ACT">
+					<span>On ACT</span>
+				</a>
+				<a class="co-app-card co-app-card--crm" href="{{scriptpath}}/index.php?title=Project/CRM">
+					<img src="{{stylepath}}/ControleOnline/resources/assets/CRM.png" alt="On CRM">
+					<span>On CRM</span>
+				</a>
+			</div>
+		</section>
+		{{/is-mainpage}}
+
+		{{^is-mainpage}}
+		<section class="co-hero co-hero--page">
+			<div class="co-hero-copy">
+				<div class="co-kicker">Portal corporativo</div>
+				{{{html-title-heading}}}
+				{{{html-subtitle}}}
+			</div>
+			<div class="co-hero-meta">
+				<div class="co-mini-title">Acesso rápido</div>
+				<div class="co-mini-links">
+					<a href="{{searchaction}}">Pesquisar</a>
+					<a href="{{scriptpath}}/index.php?title=Project">Central</a>
+					<a href="http://controleonline.com/">Site</a>
+				</div>
+			</div>
+		</section>
+		{{/is-mainpage}}
+
+		<main id="content" class="mw-body co-content" role="main">
+			{{{html-site-notice}}}
+			{{{html-user-message}}}
+			<div class="co-article">
+				{{{html-body-content}}}
+				{{{html-categories}}}
+				{{{html-after-content}}}
+			</div>
+		</main>
+
+		<footer class="co-footer" role="contentinfo">
+			<div class="co-footer-brand">
+				<img src="{{stylepath}}/ControleOnline/resources/assets/logo-controle-branco-1.png" alt="{{msg-sitetitle}}">
+				<div>
+					<div class="co-footer-title">Controle Online</div>
+					<div class="co-footer-copy">Central de Ajuda corporativa e responsiva.</div>
+				</div>
+			</div>
+			<div class="co-footer-links">
+				<a href="{{link-mainpage}}">Início</a>
+				<a href="{{scriptpath}}/index.php?title=Project">Central</a>
+				<a href="http://controleonline.com/">Site institucional</a>
+			</div>
+		</footer>
+	</div>
+</div>

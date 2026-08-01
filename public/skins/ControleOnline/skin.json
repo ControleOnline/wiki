@@ -1,0 +1,52 @@
+{
+	"name": "ControleOnline",
+	"namemsg": "skinname-controleonline",
+	"descriptionmsg": "skinname-controleonline-desc",
+	"type": "skin",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.40.0"
+	},
+	"ValidSkinNames": {
+		"controleonline": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "controleonline",
+					"templateDirectory": "includes/Skins",
+					"template": "skin",
+					"responsive": true,
+					"messages": [
+						"sitetitle",
+						"search",
+						"navigation-heading",
+						"mainpage"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"ControleOnline": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "ControleOnline"
+	},
+	"ResourceModules": {
+		"skins.controleonline": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": true,
+				"content": true,
+				"interface": true,
+				"logo": true
+			},
+			"styles": [
+				"resources/controleonline.css"
+			]
+		}
+	}
+}

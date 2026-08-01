@@ -1,0 +1,10 @@
+LocalSettings.php
+.env
+.env.*
+*.log
+cache/
+images/
+mwstore/
+temp/
+thumb/
+uploads/
