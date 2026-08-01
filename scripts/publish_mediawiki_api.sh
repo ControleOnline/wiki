@@ -104,8 +104,6 @@ ensure_logo_asset() {
   echo "$logo_file"
 }
 
-upload_file "Controle-Online-logo.png" "$(ensure_logo_asset)" "Logo oficial da Controle Online"
-
 publish_page() {
   local title="$1"
   local file="$2"
@@ -168,6 +166,8 @@ upload_file() {
 
   jq -r '"uploaded \(.upload.filename // "'"$filename"'")"' <<<"$response"
 }
+
+upload_file "Controle-Online-logo.png" "$(ensure_logo_asset)" "Logo oficial da Controle Online"
 
 remove_page() {
   local title="$1"
