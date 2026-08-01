@@ -27,5 +27,4 @@ jobs:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           MEDIAWIKI_API_URL: https://ajuda.controleonline.com/api.php
-          MEDIAWIKI_CREDENTIALS_FTP_PATH: ../.controleonline/mediawiki.env
         run: bash scripts/publish_mediawiki_api.sh
