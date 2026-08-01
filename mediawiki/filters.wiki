@@ -1,0 +1,48 @@
+= Oque são os filtros? =
+
+Os filtros servem para facilitar a procura de dados dentro do sistema, então sempre que precisar buscar por algum dado em específico dentro do sistema o ideal é que use dos filtros para deixar a procura mais fácil.
+
+= Quais filtros existem? =
+
+A quantidade de filtros podem mudar dependendo dos módulos que você possui em seu acesso, logo nem todos os filtros citados nesse artigo podem estar disponíveis para o seu uso, dentre os filtros temos:
+
+* ID
+* Nome
+* Tipo
+* Status
+* Data
+* Forma de pagamento
+
+= ID =
+
+O "ID" é um número ligado ao pedido onde somente este pedido possui tal número, como uma maneira de diferenciar dados repetidos entre outros pedidos, logo o ID é um componente exclusivo para cada pedido em específico.
+
+= Nome =
+
+O "Nome" é como o nome diz, ele é o Nome dado na hora de cadastrar um pedido, cliente ou fornecedor, podem existir dados repetidos dentre os nomes, logo ao filtrar através dos nomes o sistema ira te mostrar todos os dados com aquele respectivo nome.
+
+= Tipo = 
+
+O "Tipo" é a maneira de filtrar dados entre pessoas físicas ou jurídicas.
+
+= Status =
+
+O "Status" filtra dados dependendo do estado dele, como por exemplo: Um pedido que está na produção ganha o Status de "Em Produção", logo se usarmos o filtro de Status para filtrar aqueles pedidos que estão "Em Produção" veremos todos aqueles com este estado.
+
+= Data =
+
+A "Data" filtra dados através de uma data em especifica, podendo ser uma data de vencimento, data de entrada/saída, data estimada e data de finalização.
+
+= Forma de Pagamento =
+
+O filtro de "forma de pagamento" filtra dados de pedidos entre a forma de pagamento escolhida, então se usarmos os filtro para buscar todos os pedidos pagos em dinheiro ele nos mostrará todos aqueles pagos em dinheiro.
+
+= Ícones =
+
+=== Filtrar ===
+[[File: filtro1.PNG]]
+ Ao clicar neste ícone você da a permissão para o sistema buscar os dados com os filtros selecionados anteriormente.
+
+=== Limpar filtro ===
+[[File: limpafiltro.PNG]]
+ Este ícone serve para limpar os filtros selecionados, assim retirando toda a filtragem feita.

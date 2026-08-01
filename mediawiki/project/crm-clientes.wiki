@@ -4,15 +4,12 @@
 
 Use esta seção para consultar e manter os cadastros de clientes usados pela equipe comercial.
 
-== Ações disponíveis ==
+== O que você pode fazer ==
 
-{| class="wikitable"
-! Ação
-! Quando usar
-|-
-| [[Project/CRM - Edição de endereço de cliente|Como editar o endereço de um cliente]]
-| Quando precisar corrigir rua, número, bairro, cidade, estado, CEP, complemento ou apelido de um endereço já cadastrado.
-|}
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-help-crm-editar-endereco.png|link=Project/CRM - Edição de endereço de cliente
+Arquivo:Co-help-crm-editar-contato.png|link=Project/CRM - Editar contato de cliente
+</gallery>
 
 [[Categoria:CRM]]
 [[Categoria:Clientes]]

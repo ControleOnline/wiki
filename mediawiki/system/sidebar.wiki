@@ -1,0 +1,15 @@
+* Áreas
+** Página principal|Início
+** Project|Central de ajuda
+** Project/Manager|Manager
+** Project/Admin|Admin
+** Project/CRM|CRM
+** Project/POS|POS
+** Project/PPC|PPC
+** Project/Shop|Shop
+** Project/Delivery|Delivery
+** Project/Service|Service
+* Links
+** https://controleonline.com/|Site institucional
+** Special:Search|Pesquisar
+** Special:RecentChanges|Mudanças recentes

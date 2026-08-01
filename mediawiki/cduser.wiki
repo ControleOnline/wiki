@@ -1,0 +1,9 @@
+= Tela de Cadastro =
+
+A tela de cadastro serve para que novos usuários possam ser incluídos no sistema e assim utiliza-lo
+
+= Aparência =
+
+= Duvidas =
+
+Como alterar minha senha?

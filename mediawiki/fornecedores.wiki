@@ -1,0 +1,26 @@
+= Tela de Fornecedores =
+
+A Tela de Fornecedores exibe todos os fornecedores cadastrados no sistema. Ela também oferece filtros para ajudar o usuário a encontrar fornecedores específicos com facilidade.
+
+= Aparência =
+
+[[File: providers-controleonline.PNG| 700px]]
+
+
+= Filtros Disponíveis =
+
+*Nome
+*Id
+*Tipo
+
+= Duvidas =
+
+===Como cadastrar novos fornecedores?===
+
+Para cadastrar novos Fornecedores no sistema você deve clicar no ícone de " + " e preencher os dados do fornecedor, assim que os dados forem preenchidos basta salvar eles clicando em "salvar".
+
+[[File: providers2.PNG| 550px]]
+
+=== Como uso os filtros? ===
+
+[[https://ajuda.controleonline.com/index.php?title=Filters Clique aqui para saber sobre os filtros]]

@@ -1,0 +1,190 @@
+body.skin-vector-legacy {
+  background:
+    radial-gradient(circle at top, rgba(215, 177, 90, 0.12), transparent 32%),
+    linear-gradient(180deg, #0c1017 0%, #0f131b 100%);
+  color: #ece4d2;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+body.skin-vector-legacy::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.06), transparent 24%),
+    radial-gradient(circle at 80% 8%, rgba(215, 177, 90, 0.08), transparent 22%);
+  z-index: -1;
+}
+
+#mw-page-base,
+#mw-head-base {
+  display: none;
+}
+
+#mw-head {
+  background: rgba(12, 15, 21, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(10px);
+}
+
+#mw-panel {
+  background: linear-gradient(180deg, rgba(16, 19, 26, 0.98), rgba(12, 15, 21, 0.98));
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#p-logo {
+  padding: 1.5rem 1rem 0.75rem;
+}
+
+#p-logo a {
+  background: none !important;
+  text-indent: 0;
+  width: auto;
+  height: auto;
+  color: #f6ecd7;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#p-logo a::before {
+  content: "Controle Online";
+  display: block;
+}
+
+#p-logo a::after {
+  content: "Central de Ajuda";
+  display: block;
+  color: #d7b15a;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  margin-top: 0.25rem;
+}
+
+#content {
+  background: rgba(16, 19, 27, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  margin-top: 1.25rem;
+}
+
+.mw-body {
+  color: #efe7d7;
+}
+
+.mw-body h1,
+.mw-body h2,
+.mw-body h3,
+.mw-body h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f6ecd7;
+}
+
+a {
+  color: #d7b15a;
+}
+
+a:hover {
+  color: #ffd66b;
+}
+
+#mw-panel .portal {
+  margin: 0 10px 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+}
+
+#mw-panel .portal h3 {
+  color: #f0bf57;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+#mw-panel .portal .body ul li a {
+  color: #efe7d7;
+}
+
+#mw-panel .portal .body ul li a:hover {
+  color: #ffd66b;
+}
+
+#p-personal,
+#p-views,
+#p-cactions,
+#p-namespaces,
+#p-variants {
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vector-menu-tabs .vector-menu-heading {
+  color: #f1e6d1;
+}
+
+.vector-menu-tabs .selected > a,
+.vector-menu-tabs .selected > span {
+  color: #ffd66b;
+  border-bottom-color: #f0bf57;
+}
+
+#p-search .vector-search-box-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f6ecd7;
+}
+
+#p-search .vector-search-box-icon svg,
+#p-search .vector-search-box-searchbutton svg {
+  fill: #d7b15a;
+}
+
+.wikitable {
+  background: #1a1e29;
+  color: #efe7d7;
+  border-color: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.wikitable th {
+  background: rgba(215, 177, 90, 0.14);
+  color: #f6ecd7;
+}
+
+.wikitable td,
+.wikitable th {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.gallerybox {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+}
+
+.gallerytext {
+  color: #efe7d7;
+  font-weight: 600;
+}
+
+.mw-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #aab2c2;
+}
+
+.mw-footer a {
+  color: #d7b15a;
+}

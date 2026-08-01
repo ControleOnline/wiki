@@ -1,0 +1,13 @@
+= Shop =
+
+{{DISPLAYTITLE:Shop}}
+
+Use o Shop para vitrine, catálogo, carrinho, checkout e pedidos online do cliente final.
+
+== Seções principais ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-app-shop.png
+</gallery>
+
+[[Categoria:Shop]]

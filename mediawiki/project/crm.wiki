@@ -2,31 +2,24 @@
 
 {{DISPLAYTITLE:CRM}}
 
-O CRM reúne os fluxos comerciais usados pela equipe de vendas, pré-venda e pós-venda para acompanhar clientes, oportunidades, propostas, contratos, conversas e comissões.
+Use o CRM para acompanhar o relacionamento comercial: clientes, oportunidades, propostas, contratos, conversas e comissões.
 
-== Seções do menu ==
+== Escolha uma seção ==
 
-{| class="wikitable"
-! Seção
-! O que você faz aqui
-|-
-| [[Project/CRM/Clientes|Clientes]]
-| Consultar, cadastrar e atualizar dados de clientes, contatos, documentos e endereços.
-|-
-| Oportunidades
-| Acompanhar negociações, filtros de status e próximos retornos comerciais.
-|-
-| Propostas
-| Criar, revisar e acompanhar propostas comerciais.
-|-
-| Contratos
-| Consultar contratos vinculados ao relacionamento comercial.
-|-
-| Conversas
-| Acompanhar interações e mensagens do relacionamento comercial.
-|-
-| Comissões
-| Consultar comissões vinculadas às vendas.
-|}
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-crm-clientes.png|link=Project/CRM/Clientes
+Arquivo:Co-crm-oportunidades.png|link=Project/CRM/Oportunidades
+Arquivo:Co-crm-propostas.png|link=Project/CRM/Propostas
+Arquivo:Co-crm-contratos.png|link=Project/CRM/Contratos
+Arquivo:Co-crm-conversas.png|link=Project/CRM/Conversas
+Arquivo:Co-crm-comissoes.png|link=Project/CRM/Comissões
+</gallery>
+
+== Ações disponíveis ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-help-crm-editar-endereco.png|link=Project/CRM - Edição de endereço de cliente
+Arquivo:Co-help-crm-editar-contato.png|link=Project/CRM - Editar contato de cliente
+</gallery>
 
 [[Categoria:CRM]]

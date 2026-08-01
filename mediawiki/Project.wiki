@@ -1,59 +1,32 @@
+__NOTOC__
+
 = Central de Ajuda Controle Online =
 
-Esta página organiza a ajuda por aplicativo. Comece escolhendo a visão em que você trabalha e depois siga pela seção do menu até encontrar o passo a passo da ação que deseja executar.
+{{DISPLAYTITLE:Central de Ajuda Controle Online}}
 
-== Aplicativos ==
+Escolha o aplicativo em que você trabalha. Cada botão leva para a área daquele app e, dentro dela, para as seções do menu e passos de uso disponíveis.
 
-{| class="wikitable"
-! Aplicativo
-! Para quem é
-! Conteúdos disponíveis
-|-
-| [[Project/Manager|Manager]]
-| Donos, gerentes e backoffice
-| Administração operacional, financeiro, produtos, pedidos e configurações
-|-
-| [[Project/Admin|Admin]]
-| Administradores responsáveis por menus e acessos
-| Menus, permissões e cadastros administrativos
-|-
-| [[Project/CRM|CRM]]
-| Vendedores, consultores e equipe comercial
-| Clientes, oportunidades, propostas, contratos, conversas e comissões
-|-
-| [[Project/POS|POS]]
-| Caixa, balcão, garçom e atendimento presencial
-| Vendas, comandas, carrinho, cobrança e caixa
-|-
-| [[Project/PPC|PPC]]
-| Produção, cozinha, expedição e displays
-| Filas, preparo, conferência e acompanhamento operacional
-|-
-| [[Project/Shop|Shop]]
-| Cliente final
-| Vitrine, catálogo, carrinho, checkout e pedidos online
-|-
-| [[Project/Delivery|Delivery]]
-| Entregadores e operação logística
-| Corridas, entregas, recebíveis e presença
-|-
-| [[Project/Service|Service]]
-| Equipe operacional de apoio
-| Etiquetas, insumos e rotinas de suporte operacional
-|}
+== Escolha o aplicativo ==
 
-== Artigos recentes ==
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-app-manager.png|link=Project/Manager
+Arquivo:Co-app-admin.png|link=Project/Admin
+Arquivo:Co-app-crm.png|link=Project/CRM
+Arquivo:Co-app-pos.png|link=Project/POS
+Arquivo:Co-app-ppc.png|link=Project/PPC
+Arquivo:Co-app-shop.png|link=Project/Shop
+Arquivo:Co-app-delivery.png|link=Project/Delivery
+Arquivo:Co-app-service.png|link=Project/Service
+</gallery>
 
-{| class="wikitable"
-! Artigo
-! Caminho
-! Atualizado em
-|-
-| [[Project/CRM - Edição de endereço de cliente|Como editar o endereço de um cliente]]
-| [[Project/CRM|CRM]] > [[Project/CRM/Clientes|Clientes]]
-| 2026-07-30
-|-
-| [[Project/Produtos - Busca em grupos de produtos|Adicionar produtos a grupos sem repetir itens]]
-| [[Project/Manager|Manager]] > Produtos
-| 2026-07-30
-|}
+== Atalhos recentes ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-help-crm-editar-endereco.png|link=Project/CRM - Edição de endereço de cliente
+Arquivo:Co-help-crm-editar-contato.png|link=Project/CRM - Editar contato de cliente
+Arquivo:Co-help-produtos-grupos.png|link=Project/Produtos - Busca em grupos de produtos
+</gallery>
+
+<div style="margin-top: 28px; padding-top: 18px; border-top: 1px solid #303648; text-align: center; color: #b8bdca;">
+  Também disponível no site institucional: [http://controleonline.com/ controleonline.com]
+</div>

@@ -1,0 +1,14 @@
+= CRM - Contratos =
+
+{{DISPLAYTITLE:CRM - Contratos}}
+
+Use esta seção para consultar contratos vinculados ao relacionamento comercial.
+
+== Seção do CRM ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-crm-contratos.png
+</gallery>
+
+[[Categoria:CRM]]
+[[Categoria:Contratos]]

@@ -6,6 +6,7 @@ Este repositório público mantém uma cópia sanitizada do conteúdo público d
 
 - `site/`: espelho público sanitizado do FTP, sem arquivos sensíveis, banco, cache, uploads ou imagens
 - `mediawiki/`: fontes em wikitext para páginas criadas pela API/runtime do MediaWiki
+- `mediawiki/system/`: mensagens de sistema e tema global, incluindo CSS, sidebar e rodapé
 - `.github/workflows/sync-from-ftp.yml`: sincroniza o conteúdo do FTP para o repositório
 - `.github/workflows/deploy.yml`: publicação manual de `site/` no FTP, para uso controlado
 - `.github/workflows/publish-mediawiki-api.yml`: publica fontes wikitext pela API do MediaWiki

@@ -1,0 +1,53 @@
+= Central de Ajuda Controle Online =
+
+{{DISPLAYTITLE:Central de Ajuda Controle Online}}
+__NOTOC__
+
+<div style="background: linear-gradient(135deg, #0f131b 0%, #171b26 45%, #212635 100%); border: 1px solid #31384a; border-radius: 28px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36); padding: 48px 52px 40px; color: #f6ecd7;">
+  <div style="max-width: 780px;">
+    <div style="font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: #d7b15a; margin-bottom: 14px;">Controle Online</div>
+    <div style="font-size: 56px; line-height: 1; font-weight: 700; margin: 0 0 16px;">Central de Ajuda</div>
+    <div style="font-size: 18px; line-height: 1.65; color: #d6d8de; max-width: 700px;">
+      Documentação corporativa para operação, vendas e administração. Entre pelo aplicativo ou encontre o passo a passo que você precisa em poucos cliques.
+    </div>
+    <div style="margin-top: 28px; font-size: 15px; line-height: 1.4;">
+      <a href="/index.php?title=Special:Search" style="display: inline-block; margin: 0 12px 12px 0; background: #f0bf57; border-radius: 999px; padding: 12px 22px; font-weight: 700; color: #121212; text-decoration: none; box-shadow: 0 10px 24px rgba(240, 191, 87, 0.25);">Pesquisar na ajuda</a>
+      <a href="/index.php?title=Project" style="display: inline-block; margin: 0 12px 12px 0; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 12px 22px; font-weight: 700; color: #f6ecd7; text-decoration: none;">Abrir a central</a>
+      <a href="http://controleonline.com/" style="display: inline-block; margin: 0 12px 12px 0; background: transparent; border: 1px solid rgba(215, 177, 90, 0.55); border-radius: 999px; padding: 12px 22px; font-weight: 700; color: #f0bf57; text-decoration: none;">Site institucional</a>
+    </div>
+  </div>
+</div>
+
+== Escolha o aplicativo ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-app-manager.png|link=Project/Manager
+Arquivo:Co-app-admin.png|link=Project/Admin
+Arquivo:Co-app-crm.png|link=Project/CRM
+Arquivo:Co-app-pos.png|link=Project/POS
+Arquivo:Co-app-ppc.png|link=Project/PPC
+Arquivo:Co-app-shop.png|link=Project/Shop
+Arquivo:Co-app-delivery.png|link=Project/Delivery
+Arquivo:Co-app-service.png|link=Project/Service
+</gallery>
+
+== Destaques ==
+
+{| style="width: 100%; border-collapse: separate; border-spacing: 16px;"
+|-
+| style="width: 33%; background: #1f2430; border: 1px solid #32384a; border-radius: 20px; vertical-align: top; padding: 16px; color: #efe7d7;" | [[Arquivo:Co-help-crm-editar-endereco.png|frameless|center|320px]] '''CRM e clientes'''<br />Mantenha os cadastros comerciais e encontre os passos mais usados pela equipe.
+| style="width: 33%; background: #1f2430; border: 1px solid #32384a; border-radius: 20px; vertical-align: top; padding: 16px; color: #efe7d7;" | [[Arquivo:Co-manager-produtos.png|frameless|center|320px]] '''Gestão operacional'''<br />Acesse produtos, pedidos, estoque e rotinas de backoffice em um só lugar.
+| style="width: 33%; background: #1f2430; border: 1px solid #32384a; border-radius: 20px; vertical-align: top; padding: 16px; color: #efe7d7;" | [[Arquivo:Co-app-pos.png|frameless|center|320px]] '''Atendimento e caixa'''<br />Fluxos de venda presencial, cobrança e operação no ponto de atendimento.
+|}
+
+== Leituras rápidas ==
+
+* [[Project/CRM - Editar contato de cliente|Como editar um contato de cliente]]
+* [[Project/CRM - Edição de endereço de cliente|Como editar o endereço de um cliente]]
+* [[Project/Produtos - Busca em grupos de produtos|Adicionar produtos a grupos sem repetir itens]]
+* [[Project/CRM|Abrir o CRM]]
+* [[Project|Ir para a central completa]]
+
+<div style="margin-top: 28px; padding-top: 18px; border-top: 1px solid #303648; text-align: center; color: #b8bdca;">
+  Visite também o site corporativo: [http://controleonline.com/ controleonline.com]
+</div>

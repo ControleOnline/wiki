@@ -1,0 +1,13 @@
+= Manager =
+
+{{DISPLAYTITLE:Manager}}
+
+Use o Manager para rotinas de gestão operacional, backoffice, produtos, pedidos, financeiro e configurações.
+
+== Escolha uma seção ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-manager-produtos.png|link=Project/Produtos - Busca em grupos de produtos
+</gallery>
+
+[[Categoria:Manager]]

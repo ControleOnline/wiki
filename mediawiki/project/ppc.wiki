@@ -1,0 +1,13 @@
+= PPC =
+
+{{DISPLAYTITLE:PPC}}
+
+Use o PPC para produção, preparo, filas, displays e acompanhamento operacional.
+
+== Seções principais ==
+
+<gallery mode="nolines" widths="320" heights="178">
+Arquivo:Co-app-ppc.png
+</gallery>
+
+[[Categoria:PPC]]

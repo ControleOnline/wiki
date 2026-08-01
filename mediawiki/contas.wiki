@@ -1,0 +1,50 @@
+= Contas a Receber =
+
+A Tela de Contas a Receber mostra as vendas que ainda não foram pagas. Ela também oferece filtros avançados para facilitar a busca de contas específicas.
+
+= Aparência =
+
+[[File: pagar.PNG| 700px]]
+
+
+= Filtros Disponíveis = 
+
+*ID
+*Pagador
+*Centro de Custo
+*Status
+*Data de Vencimento
+*Carteira
+*Forma de Pagamento
+
+= Contas a Pagar =
+
+A Tela de Contas a Pagar mostra todas as contas que ainda precisam ser pagas. Ela também oferece funções de filtragem para ajudar a encontrar contas específicas com mais facilidade.
+
+= Aparência =
+
+[[File: receber.PNG| 700px]]
+
+
+= Filtros Disponíveis = 
+
+*ID
+*Fornecedor
+*Centro de Custo 
+*Status
+*Data de Vencimento
+*Carteira
+*Forma de pagamento 
+
+= Duvidas =
+
+=== Como adicionar contas? ===
+
+Para cadastrar novos clientes no sistema você deve clicar no ícone de " + " e preencher os dados do cliente, assim que os dados forem preenchidos basta salvar eles clicando em "salvar".
+
+
+[[File: contas2.PNG| 550px]]
+
+=== Como uso os filtros? ===
+
+[[https://ajuda.controleonline.com/index.php?title=Filters Clique aqui para saber sobre os filtros]]

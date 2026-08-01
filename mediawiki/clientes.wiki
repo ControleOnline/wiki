@@ -1,0 +1,25 @@
+= Tela de Clientes =
+A Tela de Clientes tem a função de listar os registros de clientes cadastrados no sistema. A funcionalidade inclui filtros avançados, permitindo a busca de clientes específicos com base em ID, Nome e Tipo (Jurídica ou Física).
+
+= Aparência =
+[[File: clientes-controleonline.PNG| 700px]]
+
+= Filtros disponíveis =
+
+* ID
+* Nome
+* Tipo
+
+= Duvidas =
+
+=== Como posso cadastrar novos clientes? ===
+
+Para cadastrar novos clientes no sistema você deve clicar no ícone de " + " e preencher os dados do cliente, assim que os dados forem preenchidos basta salvar eles clicando em "salvar".
+
+[[File: clientes2.PNG| 550px]]
+
+
+ 
+=== Como uso os filtros? ===
+
+[[https://ajuda.controleonline.com/index.php?title=Filters Clique aqui para saber sobre os filtros]]

@@ -183,44 +183,37 @@ remove_page() {
     "Remove conteúdo fora do escopo da documentação de cliente"
 }
 
-publish_page \
-  "Project" \
-  "$repo_root/mediawiki/Project.wiki" \
-  "Organiza Central de Ajuda por aplicativos"
-
-publish_page \
-  "Project/CRM" \
-  "$repo_root/mediawiki/project/crm.wiki" \
-  "Publica indice de ajuda do CRM"
-
-publish_page \
-  "Project/CRM/Clientes" \
-  "$repo_root/mediawiki/project/crm-clientes.wiki" \
-  "Publica indice de ajuda de clientes do CRM"
-
-upload_file \
-  "Crm-editar-endereco-cliente-lista.png" \
-  "$repo_root/mediawiki/images/crm-editar-endereco-cliente-lista.png" \
-  "Adiciona print sanitizado da lista de endereços do cliente"
-
-upload_file \
-  "Crm-editar-endereco-cliente-formulario.png" \
-  "$repo_root/mediawiki/images/crm-editar-endereco-cliente-formulario.png" \
-  "Adiciona print sanitizado do formulario de endereço do cliente"
-
-upload_file \
-  "Crm-editar-endereco-cliente-resultado.png" \
-  "$repo_root/mediawiki/images/crm-editar-endereco-cliente-resultado.png" \
-  "Adiciona print sanitizado do resultado da edição de endereço"
-
-publish_page \
-  "Project/CRM - Edição de endereço de cliente" \
-  "$repo_root/mediawiki/project/crm-edicao-endereco-cliente.wiki" \
-  "Refaz pagina CRM como passo a passo de ajuda"
-
-publish_page \
-  "Project/Produtos - Busca em grupos de produtos" \
-  "$repo_root/mediawiki/project/produtos-busca-grupos-produtos.wiki" \
-  "Documenta melhoria de produtos para cliente final"
+publish_page "Página principal" "$repo_root/mediawiki/pagina-principal.wiki" "Atualiza a home com layout corporativo"
+publish_page "Project" "$repo_root/mediawiki/Project.wiki" "Organiza Central de Ajuda por aplicativos"
+publish_page "AltSenha" "$repo_root/mediawiki/altsenha.wiki" "Importa a pagina publica de alteração de senha"
+publish_page "Cadastro de Clientes" "$repo_root/mediawiki/cadastro-de-clientes.wiki" "Importa a pagina publica de cadastro de clientes"
+publish_page "Cduser" "$repo_root/mediawiki/cduser.wiki" "Importa a pagina publica de cadastro de usuario"
+publish_page "Clientes" "$repo_root/mediawiki/clientes.wiki" "Importa a pagina publica de clientes"
+publish_page "Contas" "$repo_root/mediawiki/contas.wiki" "Importa a pagina publica de contas"
+publish_page "Filters" "$repo_root/mediawiki/filters.wiki" "Importa a pagina publica de filtros"
+publish_page "Fornecedores" "$repo_root/mediawiki/fornecedores.wiki" "Importa a pagina publica de fornecedores"
+publish_page "Links" "$repo_root/mediawiki/links.wiki" "Importa a pagina publica de links"
+publish_page "Pedidos" "$repo_root/mediawiki/pedidos.wiki" "Importa a pagina publica de pedidos"
+publish_page "Resultados" "$repo_root/mediawiki/resultados.wiki" "Importa a pagina publica de resultados"
+publish_page "Project/Admin" "$repo_root/mediawiki/project/admin.wiki" "Publica indice de ajuda do Admin"
+publish_page "Project/CRM" "$repo_root/mediawiki/project/crm.wiki" "Publica indice de ajuda do CRM"
+publish_page "Project/CRM/Clientes" "$repo_root/mediawiki/project/crm-clientes.wiki" "Publica indice de ajuda de clientes do CRM"
+publish_page "Project/CRM/Comissões" "$repo_root/mediawiki/project/crm-comissoes.wiki" "Publica indice de comissoes do CRM"
+publish_page "Project/CRM/Contratos" "$repo_root/mediawiki/project/crm-contratos.wiki" "Publica indice de contratos do CRM"
+publish_page "Project/CRM/Conversas" "$repo_root/mediawiki/project/crm-conversas.wiki" "Publica indice de conversas do CRM"
+publish_page "Project/CRM/Oportunidades" "$repo_root/mediawiki/project/crm-oportunidades.wiki" "Publica indice de oportunidades do CRM"
+publish_page "Project/CRM/Propostas" "$repo_root/mediawiki/project/crm-propostas.wiki" "Publica indice de propostas do CRM"
+publish_page "Project/CRM - Edição de endereço de cliente" "$repo_root/mediawiki/project/crm-edicao-endereco-cliente.wiki" "Refaz pagina CRM como passo a passo de ajuda"
+publish_page "Project/CRM - Editar contato de cliente" "$repo_root/mediawiki/project/crm-editar-contato-cliente.wiki" "Adiciona passo a passo de editar contato de cliente"
+publish_page "Project/Delivery" "$repo_root/mediawiki/project/delivery.wiki" "Publica indice de ajuda do Delivery"
+publish_page "Project/Manager" "$repo_root/mediawiki/project/manager.wiki" "Publica indice de ajuda do Manager"
+publish_page "Project/POS" "$repo_root/mediawiki/project/pos.wiki" "Publica indice de ajuda do POS"
+publish_page "Project/PPC" "$repo_root/mediawiki/project/ppc.wiki" "Publica indice de ajuda do PPC"
+publish_page "Project/Produtos - Busca em grupos de produtos" "$repo_root/mediawiki/project/produtos-busca-grupos-produtos.wiki" "Documenta melhoria de produtos para cliente final"
+publish_page "Project/Service" "$repo_root/mediawiki/project/service.wiki" "Publica indice de ajuda do Service"
+publish_page "Project/Shop" "$repo_root/mediawiki/project/shop.wiki" "Publica indice de ajuda do Shop"
+publish_page "MediaWiki:Common.css" "$repo_root/mediawiki/system/common.css.wiki" "Aplica o tema corporativo global"
+publish_page "MediaWiki:Sidebar" "$repo_root/mediawiki/system/sidebar.wiki" "Simplifica a navegação lateral da wiki"
+publish_page "MediaWiki:Copyright" "$repo_root/mediawiki/system/copyright.wiki" "Exibe o site institucional no rodapé"
 
 remove_page "Project/Agents-mcp 41 - Governança de mudanças internas"
