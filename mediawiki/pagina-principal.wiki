@@ -1,53 +1,89 @@
-= Central de Ajuda Controle Online =
-
 {{DISPLAYTITLE:Central de Ajuda Controle Online}}
 __NOTOC__
 
-<div style="background: linear-gradient(135deg, #0f131b 0%, #171b26 45%, #212635 100%); border: 1px solid #31384a; border-radius: 28px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36); padding: 48px 52px 40px; color: #f6ecd7;">
-  <div style="max-width: 780px;">
-    <div style="font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: #d7b15a; margin-bottom: 14px;">Controle Online</div>
-    <div style="font-size: 56px; line-height: 1; font-weight: 700; margin: 0 0 16px;">Central de Ajuda</div>
-    <div style="font-size: 18px; line-height: 1.65; color: #d6d8de; max-width: 700px;">
-      Documentação corporativa para operação, vendas e administração. Entre pelo aplicativo ou encontre o passo a passo que você precisa em poucos cliques.
-    </div>
-    <div style="margin-top: 28px; font-size: 15px; line-height: 1.4;">
-      <a href="/index.php?title=Special:Search" style="display: inline-block; margin: 0 12px 12px 0; background: #f0bf57; border-radius: 999px; padding: 12px 22px; font-weight: 700; color: #121212; text-decoration: none; box-shadow: 0 10px 24px rgba(240, 191, 87, 0.25);">Pesquisar na ajuda</a>
-      <a href="/index.php?title=Project" style="display: inline-block; margin: 0 12px 12px 0; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 12px 22px; font-weight: 700; color: #f6ecd7; text-decoration: none;">Abrir a central</a>
-      <a href="http://controleonline.com/" style="display: inline-block; margin: 0 12px 12px 0; background: transparent; border: 1px solid rgba(215, 177, 90, 0.55); border-radius: 999px; padding: 12px 22px; font-weight: 700; color: #f0bf57; text-decoration: none;">Site institucional</a>
-    </div>
-  </div>
+<div class="co-shell co-home-shell">
+<div class="co-hero">
+<div class="co-hero-copyblock">
+<div class="co-brand-logo">[[Arquivo:Controle-Online-logo.png|frameless|link=Project|260px|alt=Controle Online]]</div>
+<div class="co-brand">
+<div class="co-brand-mark"></div>
+<div class="co-brand-copy">
+<div class="co-brand-name">Controle Online</div>
+<div class="co-brand-tag">Modo On</div>
+</div>
+</div>
+<div class="co-kicker">Central de Ajuda</div>
+<div class="co-hero-title">Portal corporativo de suporte e operação</div>
+<p class="co-hero-copy">Você cuida do seu negócio, nós cuidamos de sua tecnologia. Encontre procedimentos, atalhos e guias por aplicativo com uma navegação rápida, clara e pensada para celular.</p>
+<div class="co-hero-actions">
+<a class="co-btn co-btn-primary" href="/index.php?title=Special:Search">Pesquisar na ajuda</a>
+<a class="co-btn" href="/index.php?title=Project">Abrir a central</a>
+<a class="co-btn co-btn-outline" href="http://controleonline.com/">Site institucional</a>
+</div>
+</div>
+<div class="co-hero-panel">
+<div class="co-hero-tile">
+<div class="co-card-label">Acesso rápido</div>
+<h3>Menos cliques, mais clareza</h3>
+<p>Organizamos a documentação por aplicativo, fluxo e tarefa para reduzir atrito no suporte.</p>
+</div>
+<div class="co-hero-tile">
+<div class="co-card-label">Atalhos</div>
+<div class="co-mini-links">
+<a class="co-mini-link" href="/index.php?title=Project/Manager">Manager</a>
+<a class="co-mini-link" href="/index.php?title=Project/CRM">CRM</a>
+<a class="co-mini-link" href="/index.php?title=Project/POS">POS</a>
+<a class="co-mini-link" href="/index.php?title=Project/Delivery">Delivery</a>
+</div>
+</div>
+</div>
 </div>
 
-== Escolha o aplicativo ==
+<div class="co-section">
+<div>
+<div class="co-section-title">Aplicativos</div>
+<div class="co-section-subtitle">Acesso direto ao menu de cada área</div>
+</div>
+</div>
 
-<gallery mode="nolines" widths="320" heights="178">
-Arquivo:Co-app-manager.png|link=Project/Manager
-Arquivo:Co-app-admin.png|link=Project/Admin
-Arquivo:Co-app-crm.png|link=Project/CRM
-Arquivo:Co-app-pos.png|link=Project/POS
-Arquivo:Co-app-ppc.png|link=Project/PPC
-Arquivo:Co-app-shop.png|link=Project/Shop
-Arquivo:Co-app-delivery.png|link=Project/Delivery
-Arquivo:Co-app-service.png|link=Project/Service
-</gallery>
+<div class="co-grid co-grid-apps">
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-manager.png|frameless|link=Project/Manager|320px]]</div><div class="co-card-body"><div class="co-card-title">Manager</div><div class="co-card-copy">Gestão operacional, financeiro, produtos, pedidos e configurações.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-admin.png|frameless|link=Project/Admin|320px]]</div><div class="co-card-body"><div class="co-card-title">Admin</div><div class="co-card-copy">Menus, permissões e cadastros administrativos.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-crm.png|frameless|link=Project/CRM|320px]]</div><div class="co-card-body"><div class="co-card-title">CRM</div><div class="co-card-copy">Clientes, propostas, contratos, conversas e comissões.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-pos.png|frameless|link=Project/POS|320px]]</div><div class="co-card-body"><div class="co-card-title">POS</div><div class="co-card-copy">Venda presencial, cobrança, comandas e caixa.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-ppc.png|frameless|link=Project/PPC|320px]]</div><div class="co-card-body"><div class="co-card-title">PPC</div><div class="co-card-copy">Produção, preparo, filas e acompanhamento operacional.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-shop.png|frameless|link=Project/Shop|320px]]</div><div class="co-card-body"><div class="co-card-title">Shop</div><div class="co-card-copy">Vitrine, catálogo, carrinho, checkout e pedidos online.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-delivery.png|frameless|link=Project/Delivery|320px]]</div><div class="co-card-body"><div class="co-card-title">Delivery</div><div class="co-card-copy">Corridas, entregas, recebíveis e presença.</div></div></div>
+<div class="co-card co-card-app"><div class="co-card-media">[[Arquivo:Co-app-service.png|frameless|link=Project/Service|320px]]</div><div class="co-card-body"><div class="co-card-title">Service</div><div class="co-card-copy">Etiquetas, insumos e rotinas de suporte operacional.</div></div></div>
+</div>
 
-== Destaques ==
+<div class="co-section">
+<div>
+<div class="co-section-title">Guias mais usados</div>
+<div class="co-section-subtitle">Passos que o time consulta com mais frequência</div>
+</div>
+</div>
 
-{| style="width: 100%; border-collapse: separate; border-spacing: 16px;"
-|-
-| style="width: 33%; background: #1f2430; border: 1px solid #32384a; border-radius: 20px; vertical-align: top; padding: 16px; color: #efe7d7;" | [[Arquivo:Co-help-crm-editar-endereco.png|frameless|center|320px]] '''CRM e clientes'''<br />Mantenha os cadastros comerciais e encontre os passos mais usados pela equipe.
-| style="width: 33%; background: #1f2430; border: 1px solid #32384a; border-radius: 20px; vertical-align: top; padding: 16px; color: #efe7d7;" | [[Arquivo:Co-manager-produtos.png|frameless|center|320px]] '''Gestão operacional'''<br />Acesse produtos, pedidos, estoque e rotinas de backoffice em um só lugar.
-| style="width: 33%; background: #1f2430; border: 1px solid #32384a; border-radius: 20px; vertical-align: top; padding: 16px; color: #efe7d7;" | [[Arquivo:Co-app-pos.png|frameless|center|320px]] '''Atendimento e caixa'''<br />Fluxos de venda presencial, cobrança e operação no ponto de atendimento.
-|}
+<div class="co-grid co-grid-featured">
+<div class="co-card co-card-feature"><div class="co-card-media">[[Arquivo:Co-help-crm-editar-endereco.png|frameless|link=Project/CRM - Edição de endereço de cliente|320px]]</div><div class="co-card-body"><div class="co-card-label">CRM</div><div class="co-card-title">Editar endereço de cliente</div><div class="co-card-copy">Corrija CEP, rua, número, bairro, cidade, estado e complemento.</div></div></div>
+<div class="co-card co-card-feature"><div class="co-card-media">[[Arquivo:Co-help-crm-editar-contato.png|frameless|link=Project/CRM - Editar contato de cliente|320px]]</div><div class="co-card-body"><div class="co-card-label">CRM</div><div class="co-card-title">Editar contato de cliente</div><div class="co-card-copy">Ajuste nome, apelido, vínculo e dados do contato vinculado.</div></div></div>
+<div class="co-card co-card-feature"><div class="co-card-media">[[Arquivo:Co-help-produtos-grupos.png|frameless|link=Project/Produtos - Busca em grupos de produtos|320px]]</div><div class="co-card-body"><div class="co-card-label">Manager</div><div class="co-card-title">Produtos em grupos</div><div class="co-card-copy">Adicione produtos sem repetir itens já vinculados ao grupo.</div></div></div>
+</div>
 
-== Leituras rápidas ==
+<div class="co-section">
+<div>
+<div class="co-section-title">Acesso rápido</div>
+<div class="co-section-subtitle">Links diretos para a navegação principal</div>
+</div>
+</div>
 
-* [[Project/CRM - Editar contato de cliente|Como editar um contato de cliente]]
-* [[Project/CRM - Edição de endereço de cliente|Como editar o endereço de um cliente]]
-* [[Project/Produtos - Busca em grupos de produtos|Adicionar produtos a grupos sem repetir itens]]
-* [[Project/CRM|Abrir o CRM]]
-* [[Project|Ir para a central completa]]
+<div class="co-link-grid">
+<div class="co-link-item">[[Project/CRM - Editar contato de cliente|Como editar um contato de cliente]]</div>
+<div class="co-link-item">[[Project/CRM - Edição de endereço de cliente|Como editar o endereço de um cliente]]</div>
+<div class="co-link-item">[[Project/Produtos - Busca em grupos de produtos|Adicionar produtos a grupos sem repetir itens]]</div>
+<div class="co-link-item">[[Project/CRM|Abrir o CRM]]</div>
+<div class="co-link-item">[[Project|Ir para a central completa]]</div>
+</div>
 
-<div style="margin-top: 28px; padding-top: 18px; border-top: 1px solid #303648; text-align: center; color: #b8bdca;">
-  Visite também o site corporativo: [http://controleonline.com/ controleonline.com]
+<div class="co-footer-note">Visite também o site corporativo: [http://controleonline.com/ controleonline.com]</div>
 </div>

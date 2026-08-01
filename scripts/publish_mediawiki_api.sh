@@ -92,6 +92,20 @@ csrf_token="$(
     jq -r '.query.tokens.csrftoken'
 )"
 
+ensure_logo_asset() {
+  local logo_file="$repo_root/mediawiki/files/Controle-Online-logo.png"
+  local logo_source_url="${LOGO_SOURCE_URL:-https://www.controleonline.com/wp-content/uploads/2026/05/logo-controle-branco-1.png}"
+
+  if [[ ! -f "$logo_file" ]]; then
+    mkdir -p "$(dirname "$logo_file")"
+    curl -fsSL "$logo_source_url" -o "$logo_file"
+  fi
+
+  echo "$logo_file"
+}
+
+upload_file "Controle-Online-logo.png" "$(ensure_logo_asset)" "Logo oficial da Controle Online"
+
 publish_page() {
   local title="$1"
   local file="$2"
