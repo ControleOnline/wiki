@@ -17,6 +17,9 @@
 					"templateDirectory": "includes/Skins",
 					"template": "skin",
 					"responsive": true,
+					"styles": [
+						"skins.controleonline.styles"
+					],
 					"messages": [
 						"sitetitle",
 						"search",
