@@ -1,0 +1,6 @@
+[submodule "modules/app-community"]
+	path = modules/app-community
+	url = https://github.com/ControleOnline/app-community.wiki.git
+[submodule "modules/api-community"]
+	path = modules/api-community
+	url = https://github.com/ControleOnline/api-community.wiki.git
